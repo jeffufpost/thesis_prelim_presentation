@@ -17,14 +17,10 @@
 
 <body>
     <div class="reveal">
-        <div class="menubar">
-            <ul class="menu">
-                <li><a href="#/firstmenuitem">Background</a></li>
-                <li><a href="#/secondmenuitem">Methods</a></li>
-                <li><a href="#/thirdmenuitem">Data</a></li>
-		<li><a href="#/fourthmenuitem">Analysis</a></li>
-            </ul>
+        <div class="menulogo">
+            <img src="unige-logo.svg"  height="70" width="140">
         </div>
+
         <div class="slides">
             <section class="center" data-transition="fade">
                 <h3>Sociobehavioral characteristics & HIV incidence</h3>
@@ -32,54 +28,65 @@
             </section>
             <section id="firstmenuitem">
                 <section class="center">
-                    <p>In Powerpoint you can make slides with a nice bottom- or top bar in which the active menu item is highlighted. This menu works in the same way, but automatically.</p>
+                    <p>Not starting from scratch, but from cross-sectional study.</p>
                 </section>
                 <section class="center">
-                    <p>What Simplemenu does</p>
+                    <p>Basic of cross-sectional study</p>
                     <ul class="small">
-                        <li>Make menu items of your vertical stacks (top-level sections).</li>
-                        <li>Moving to another vertical stack (by whatever navigation) will automatically update the current menu item.</li>
-                        <li>Clicking an item in the menu will open the first section in the corresponding vertical stack.</li>
-                        <li>Simplemenu can auto-generate the menu, using section names (ID's give ugly button names). See the option 'auto' in <a href="#/3/0">options</a></li>
-                        <li>Simplemenu also works in the Reveal multi-viewport setup.</li>
+                        <li>Data used</li>
+                        <li>Methods</li>
+                        <li>Results</li>
+                        <li>Further suggestions</li>
                     </ul>
                 </section>
+                <section class="center">
+                    <p>Idea en extension as longitudinal study</p>
+                    <ul class="small">
+                        <li>Using similar SB indicators but with more historical data points</li>
+                        <li>Similar methods but see evolution of countries on the SB space over time</li>
+                        <li>What hypotheses could be emulated?</li>
+                    </ul>
+                </section>              
+				<section data-background-iframe="test.html" data-background-interactive>
+				</section>  
+				<section data-background-iframe="HIV2015.html" data-background-interactive>
+				</section>  
             </section>
             <section id="secondmenuitem">
                 <section class="center">
-                    <p>It's easy to set up, but expects a few things:</p>
+                    <p>Historical data</p>
                     <ul class="small">
-                        <li>Menu items can only be top-level sections: regular horizontal slides or vertical stacks.</li>
-                        <li>There has to be an element that will hold the links. By default this selector is the class `menu`. The selector can be changed in the Simplemenu options.</li>
-                        <li>Inside this main menu, there have to be anchors with an href. These need to point to an ID of a top-level section. Reveal uses links with hashes to navigate, so the link has to be written like that: <code>href="#/firstchapter"</code>.</li>
+                        <li></li>
+                        <li></li>
+                         <code>href="#/firstchapter"</code>.</li>
                     </ul>
                 </section>
                 <section>
                     <h4>JavaScript</h4>
                     <p class="small">Load the script and make a reference to it in the Reveal plugin options.</p>
                     <pre><code class="hljs html" data-line-numbers>&lt;script src="plugin/simplemenu/simplemenu.js"&gt;&lt;/script&gt;
-&lt;script&gt;
-	Reveal.initialize({
-		plugins: [ Simplemenu ]
-	});
-&lt;script&gt;</code></pre>
+                        &lt;script&gt;
+                        Reveal.initialize({
+                        plugins: [ Simplemenu ]
+                        });
+                        &lt;script&gt;</code></pre>
                 </section>
                 <section>
                     <h4>HTML Markup</h4>
                     <p class="small">Make anchors in your links to the ID's of your sections. Use the <code>#/anchor</code> notation that Reveal uses.</p>
                     <pre><code>&lt;div class="menubar"&gt;
-    &lt;ul class="menu"&gt;
-        &lt;li&gt;
-            &lt;a href="#/firstmenuitem"&gt;First menu item&lt;/a&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class="slides"&gt;
-    &lt;section id="firstmenuitem"&gt;
-        //...
-    &lt;/section&gt;
-        //...
-&lt;/div&gt;</code></pre>
+                    &lt;ul class="menu"&gt;
+                        &lt;li&gt;
+                            &lt;a href="#/firstmenuitem"&gt;First menu item&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class="slides"&gt;
+                    &lt;section id="firstmenuitem"&gt;
+                        //...
+                    &lt;/section&gt;
+                        //...
+                &lt;/div&gt;</code></pre>
                 </section>
                 <section>
                     <h4>That's it! </h4>
@@ -156,6 +163,68 @@
                     </ul>
                 </section>
             </section>
+            <section id="fourthmenuitem">
+                <section class="center">
+                    <p>Not starting from scratch, but from cross-sectional study.</p>
+                </section>
+                <section class="center">
+                    <p>Basic of cross-sectional study</p>
+                    <ul class="small">
+                        <li>Data used</li>
+                        <li>Methods</li>
+                        <li>Results</li>
+                        <li>Further suggestions</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <p>Idea en extension as longitudinal study</p>
+                    <ul class="small">
+                        <li>Using similar SB indicators but with more historical data points</li>
+                        <li>Similar methods but see evolution of countries on the SB space over time</li>
+                        <li>What hypotheses could be emulated?</li>
+                    </ul>
+                </section>              
+				<section data-background-iframe="test.html" data-background-interactive>
+				</section>  
+				<section data-background-iframe="HIV2015.html" data-background-interactive>
+				</section>  
+            </section>
+            <section id="fifthmenuitem">
+                <section class="center">
+                    <p>Not starting from scratch, but from cross-sectional study.</p>
+                </section>
+                <section class="center">
+                    <p>Basic of cross-sectional study</p>
+                    <ul class="small">
+                        <li>Data used</li>
+                        <li>Methods</li>
+                        <li>Results</li>
+                        <li>Further suggestions</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <p>Idea en extension as longitudinal study</p>
+                    <ul class="small">
+                        <li>Using similar SB indicators but with more historical data points</li>
+                        <li>Similar methods but see evolution of countries on the SB space over time</li>
+                        <li>What hypotheses could be emulated?</li>
+                    </ul>
+                </section>              
+				<section data-background-iframe="test.html" data-background-interactive>
+				</section>  
+				<section data-background-iframe="HIV2015.html" data-background-interactive>
+				</section>  
+            </section>
+            </section>
+        </div>
+        <div class="menubar">
+            <ul class="menu">
+                <li><a href="#/firstmenuitem">Background</a></li>
+                <li><a href="#/secondmenuitem">Data</a></li>
+                <li><a href="#/thirdmenuitem">Methods</a></li>
+                <li><a href="#/fourthmenuitem">Analysis</a></li>
+                <li><a href="#/fifthmenuitem">What's next</a></li>
+            </ul>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
@@ -164,6 +233,7 @@
     <script>
         Reveal.initialize({
             transition: "convex",
+            slideNumber: 'h.v',
             plugins: [
                 Simplemenu,
                 RevealHighlight
@@ -171,49 +241,8 @@
         });
     </script>
 
-<style type="text/css">
-    /* 1. Style header/footer <div> so they are positioned as desired. */
-    #header-left {
-        position: absolute;
-        top:75px;
-        left: 20px;
-    }
-    #header-right {
-        position: absolute;
-        top:110px;
-        right: 20px;
-	      font-size: 80%;
-    }
-    #footer-left {
-        position: absolute;
-        bottom: 1%;
-        left: 1%;
-	font-size: 70%;
-    }
-</style>
 
-<!-- 2. Create hidden header/footer <div> -->
-<div id="hidden" style="display:none;">
-    <div id="header">
-        <div id="header-left"><img src="/home/jeffrey/Documents/Education/UNIGE/Thesis/ssa_hiv_ml/presentation/20210204/unige-logo.svg"  height="100" width="200"></div>
-        <div id="header-right">Master in Global Health<br>Institute of Global Health</div>
-        <div id="footer-left">Jeffrey Post</div>
-    </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script type="text/javascript">
-    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-    var header = $('#header').html();
-    if ( window.location.search.match( /print-pdf/gi ) ) {
-        Reveal.addEventListener( 'ready', function( event ) {
-            $('.slide-background').append(header);
-        });
-    }
-    else {
-        $('div.reveal').append(header);
-   }
-</script>
 
 </body>
 
