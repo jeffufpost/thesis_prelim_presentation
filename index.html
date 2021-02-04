@@ -170,31 +170,98 @@
             </section>
             <section id="thirdmenuitem">
                 <section>
-                    <h2>Multiple </h2>
+                    <h2>Main method (manual)</h2>
+                    <ul>
+                        <li>Reduce dimensionality - PCA (on surveys [2014-2018])</li>
+                        <li>Use rotation matrix to transform all surveys and visualize each on reduced PCA space</li>
+                        <li>Clustering countries close to each other on PCA space with 5 year sliding window</li>
+                    </ul>
+                </section>
+                <section data-background-iframe="plots/PCA_animation.html" data-background-interactive>
+                </section>
+                <section data-background-iframe="plots/box_animation.html" data-background-interactive>
+                </section>
+                <section>
+                    <h2>Secondary method (automatic but difficult)</h2>
                     <ol>
-                        <li></li>
-                        <li>activeclass</li>
-                        <li>activeelement</li>
-                        <li>selectby</li>
-                        <li>auto</li>
+                        <li>Reduce dimensionality - PCA (on surveys [2014-2018])</li>
+                        <li>Use rotation matrix to transform all surveys and visualize each on reduced PCA space</li>
+                        <li>Cluster country trajectories</li>
                     </ol>
                 </section>
+                <section data-background-iframe="plots/country_traj1.html" data-background-interactive></section>
+                <section data-background-iframe="plots/country_traj2.html" data-background-interactive></section>
             </section>
             <section id="fourthmenuitem">
                 <section class="center">
-                    <p>Not starting from scratch, but from cross-sectional study.</p>
+                    <h2>Analysis - 1: Movement on PCA space and HIV incidence</h2>
+                    <ol>
+                        <li>Association between PC-1/PC-2 and HIV incidence</li>
+                        <li>Association between PC-1/PC-2 movement and HIV decrease/increase</li>
+                    </ol>
+                </section>
+                <section data-background-iframe="plots/PC1_HIV_country.html" data-background-interactive></section>
+                <section data-background-iframe="plots/PC2_HIV_country.html" data-background-interactive></section>
+                <section class="center">
+                    <ul>
+                        <li>Association between PC-1 and HIV incidence</li>
+                        <li>No association between PC-2 and HIV incidence</li>
+                    </ul>
+                </section>
+                <section data-background-iframe="plots/PC1_change_HIV_cluster.html" data-background-interactive></section>
+                <section data-background-iframe="plots/PC2_change_HIV_cluster.html" data-background-interactive></section>
+                <section class="center">
+                    <ul>
+                        <li>No association between PC-1 change and HIV incidence</li>
+                        <li>No association between PC-2 change and HIV incidence</li>
+                    </ul>
+                    <ul>
+                        <il class="smallitalic">While a country may move faster to the left on PC-1 than another country, it will not necessarily decrease its HIV incidence faster</il>
+                        <il class="smallitalic">While a country may move faster to the left on PC-1 at certain years than at other years, it will not necessarily decrease its HIV incidence faster during those former years</il>
+                    </ul>
+                    <p>This likely indicates heterogeneity in the indicators that are driving PC-1 to the left, not only between countries, but also within countries but different time frames:</p>
                 </section>
                 <section class="center">
-                    <div class="r-stack">
-                        <img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
-                        <img class="fragment" src="https://placekitten.com/300/450" width="300" height="450">
-                        <img class="fragment" src="https://placekitten.com/400/400" width="400" height="400">
-                      </div>
-                    </section>    
+                    <h6>Analysis - 2: What is driving the negative move on PC-1 over time? (country level)</h6>
+                    <ul>
+                        <li>HIV incidence decrease for all countries</li>
+                        <li>Any indicator change will create a positive or negative association with HIV incidence</li>
+                        <li>Difficult to see precedence and causality</li>
+                    </ul>
+                </section>
+                <section class="center">
+                    <h6>Analysis - 2: What is driving the negative move on PC-1 over time? (cluster level)</h6>
+                    <ul>
+                        <li>Komogrov-Smirnov test - indicators whose distributions have changed significantly over time</li>
+                        <li>Example of Buy.from.shopkeeper.with.AIDS.M</li>
+                    </ul>
+                </section> 
+                <section data-background-iframe="plots/distrib_diff.html" data-background-interactive></section>   
+                <section data-background-iframe="plots/distrib_diff_HIV.html" data-background-interactive></section>
+                <section class="center">
+                    <h6>Analysis - 3: Changes in indicator contribution to variance in surveys</h6>
+                    <ul>
+                        <li>Run PCA for each 5 year window</li>
+                        <li>See indicators for which contribution to variance has changed significantly</li>
+                    </ul>
+                </section> 
+                <section data-background-iframe="plots/pca_change.html" data-background-interactive></section>
+                <section class="center">
+                    <h6>Only 3 seem to increase signifcantly</h6>
+                    <ul>
+                        <li>ART coverage</li>
+                        <li>Ever.receiving.HIV.test.W</li>
+                        <li>Ever.receiving.HIV.test.M</li>
+                    </ul>
+                </section> 
             </section>
             <section id="fifthmenuitem">
                 <section class="center">
-                    <p>Not starting from scratch, but from cross-sectional study.</p>
+                    <p>What to make of this?</p>
+                    <ul>
+                        <li>What further analysis is needed?</li>
+                        <li>What message comes out?</li>
+                    </ul>
                 </section>  
             </section>
         </div>
